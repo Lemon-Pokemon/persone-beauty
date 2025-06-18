@@ -1,0 +1,97 @@
+.modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: blur(12px);
+}
+
+.modale_wrapp {
+
+    padding: 50px 50px 20px;
+
+    border-radius: 18px;
+    background-color: #202020;
+    border: 3px solid #474747;
+
+    h2 {
+        font-size: 64px;
+        color: #fff;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+        
+        width: 320px;
+        input,
+        textarea {
+            width: 100%;
+            padding: 15px 25px;
+            
+            font-family: "Inter";
+            font-weight: 18px;
+            
+            color: #000;
+            background-color: #cccccc;
+            border: 2px solid #818181;
+            border-radius: 16px;
+            
+            resize: none;
+            box-sizing: border-box;
+
+            &::placeholder {
+                color: #333333;
+            }
+        }
+
+        button{
+            padding: 15px 25px;
+            border-radius: 16px;
+            background-color: #bdbdbd;
+            color: #000;
+
+            font-family: "Inter";
+            font-weight: 18px;
+            font-weight: 500;
+            cursor: pointer;
+
+            transition: .4s;
+            &:hover{
+                color: #bdbdbd;
+                background-color: #000;
+            }
+        }
+    }
+}
+
+.button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .modale_wrapp{
+        margin: 0 20px;
+        form{
+            width: 100%;
+        }
+    }
+
+    .button{
+        top: 15px;
+        right: 15px;
+    }
+}

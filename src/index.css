@@ -1,0 +1,25 @@
+@import "./styles/reset.scss";
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:regular,italic,700,700italic,900,900italic);
+
+
+html {
+  font-family: Bebas Neue;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background-color: #FFF5E1;
+}
+
+section:not(:first-of-type) {
+  margin-top: 100px;
+  scroll-margin-top: 170px;
+}
+
+@media (max-width: 768px) {
+  section:not(:first-of-type) {
+    margin-top: 45px;
+  }
+}

@@ -1,0 +1,130 @@
+.preview {
+    background-color: #202020;
+    height: 100vh;
+    position: relative;
+
+    .container {
+        display: flex;
+
+        max-width: 1920px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 177px 80px 50px;
+    }
+
+    .img_block {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70%;
+        max-width: 100%;
+
+        img {
+            height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .text_block {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto;
+        width: 50%;
+        min-width: 730px;
+
+        a {
+            text-decoration: none;
+        }
+
+        .title {
+            color: #fff;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 49px;
+
+            &:hover {
+                color: #FAD4B7;
+                cursor: pointer;
+
+                span {
+                    color: #FAD4B7;
+                }
+            }
+
+        }
+
+        p {
+            font-size: 96px;
+            text-align: right;
+        }
+
+        span {
+            font-family: "Inter";
+            font-size: 20px;
+            line-height: 45px;
+            color: #888888;
+        }
+    }
+
+    .meta_data {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 80px;
+
+        font-family: Inter;
+        color: #888888;
+    }
+
+}
+
+@media (max-width: 1360px) {
+    .preview {
+        .container {
+            padding: 104px 20px 50px;
+        }
+
+        .text_block {
+            p {
+                font-size: 76px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .preview {
+        .container {
+            padding-top: 70px;
+        }
+
+        .img_block {
+            height: auto;
+            width: 100%;
+            bottom: 174px;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .text_block {
+            width: 100%;
+            min-width: unset;
+
+            p {
+                font-size: 38px;
+            }
+        }
+
+        .meta_data {
+            margin-top: 20px;
+        }
+    }
+}

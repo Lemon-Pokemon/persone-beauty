@@ -1,0 +1,46 @@
+.container {
+    padding: 50px 0;
+
+    text-align: center;
+    color: #373737;
+
+    h2 {
+        font-size: 96px;
+    }
+
+    h3 {
+        margin-top: 40px;
+        font-size: 32px;
+    }
+}
+
+.descr {
+    margin-top: 20px;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 500;
+
+    &:last-child {
+        font-weight: 400;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container{
+
+        h2{
+            font-size: 46px;
+        }
+
+        h3{
+            margin-top: 22px;
+            font-size: 26px;
+        }
+
+        .descr{
+            margin-top: 16px;
+            font-size: 16px;
+        }
+    }
+}
